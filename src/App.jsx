@@ -15,6 +15,7 @@ import ParOuImpar from './components/condicional/ParOuImpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
+import Input from './components/formulario/Input'
 
 export default () => {
     return (
@@ -22,6 +23,9 @@ export default () => {
             <h1>FUNDAMENTOS REACT</h1>
             
             <div className="Cards">
+                <Card titulo = "Componente controlado" color ="#ffd3b6">
+                    <Input></Input>
+                </Card>
                 <Card titulo = "Comunicação indireta" color ="#7f8e9e">
                     <IndiretaPai></IndiretaPai>
                 </Card>
