@@ -11,6 +11,8 @@ import Familia from './components/basics/Familia'
 import FamiliaMembro from './components/basics/FamiliaMembro'
 import ListaAluno from './components/Repetição/ListaAluno'
 import TabelaProdutos from './components/Repetição/TabelaProdutos'
+import ParOuImpar from './components/condicional/ParOuImpar'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 
 export default () => {
     return (
@@ -18,6 +20,11 @@ export default () => {
             <h1>FUNDAMENTOS REACT</h1>
             
             <div className="Cards">
+                <Card titulo = "Renderização condicional" color ="#ff6f69">
+                    <ParOuImpar numero = {21}></ParOuImpar>
+                    <UsuarioInfo usuario={{nome:'Fernando'}}></UsuarioInfo>
+                    <UsuarioInfo usuario={{}}></UsuarioInfo>
+                </Card>
                 <Card titulo = "TabelaProdutos" color ="#aaaaaa">
                     <TabelaProdutos></TabelaProdutos>
                 </Card>
