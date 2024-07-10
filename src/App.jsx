@@ -17,6 +17,7 @@ import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Input from './components/formulario/Input'
 import Contador from './components/contador/contador'
+import Mega from './components/basics/mega/Mega'
 
 export default () => {
     return (
@@ -24,6 +25,9 @@ export default () => {
             <h1>FUNDAMENTOS REACT</h1>
             
             <div className="Cards">
+                <Card titulo = "MegaSena" color ="#ff6f69">
+                    <Mega></Mega>
+                </Card>
                 <Card titulo = "Contador" color ="#e7d3d3">
                     <Contador numeroInicial = {10}></Contador>
                 </Card>
